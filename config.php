@@ -21,3 +21,6 @@ define('GEODE_VERSION', '1.0.1');
 
 // URL: The URL users can go to for help
 define('GEODE_URL', 'github.com/markhuot/geode.ee_addon');
+
+// Usage: Help text on how to use the tag.
+define('GEODE_USAGE', '{exp:geode:entries type="map"}');

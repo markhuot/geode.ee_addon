@@ -8,7 +8,7 @@ $plugin_info = array(
 	'pi_author'			=> GEODE_AUTHOR,
 	'pi_author_url'		=> GEODE_URL,
 	'pi_description'	=> GEODE_DESCRIPTION,
-	'pi_usage'			=> Geode::usage()
+	'pi_usage'			=> GEODE_USAGE
 );
 
 
