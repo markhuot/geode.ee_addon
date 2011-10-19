@@ -12,6 +12,9 @@ define('GEODE_SHORT_NAME', 'geode');
 // what they are installing.
 define('GEODE_DESCRIPTION', 'Gecoding for EE2');
 
+// Author: You...
+define('GEODE_AUTHOR', 'Mark Huot');
+
 // Version: The version number of the add-on. It should follow
 // the same major.minor.bugfix scheme that EE follows.
 define('GEODE_VERSION', '1.0.1');

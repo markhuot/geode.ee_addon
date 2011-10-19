@@ -1,10 +1,12 @@
 <?php
 
+require_once PATH_THIRD.'geode/config'.EXT;
+
 class Geode_upd
 {
 	
-	var $module_name = 'Geode';
-	var $version = '1.0.0';
+	var $module_name = GEODE_NAME;
+	var $version = GEODE_VERSION;
 	
 	public function __construct() 
 	{
@@ -47,13 +49,8 @@ class Geode_upd
 		$this->EE->db->delete('modules');
 		
 		// remove actions
-		// remove module
 		$this->EE->db->where('class', $this->module_name);
 		$this->EE->db->delete('actions');
-		
-		// remove publish page updates
-		$this->EE->load->library('layout');
-		$this->EE->layout->delete_layout_tabs($this->tabs(), $this->module_name);
 		
 		return TRUE;
 	}

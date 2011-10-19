@@ -1,10 +1,12 @@
 <?php
 
+require_once PATH_THIRD.'geode/config'.EXT;
+
 class Geode_ft extends EE_Fieldtype {
 
 	public $info = array(
-		'name'		=> 'Geode',
-		'version'	=> '1.0.0'
+		'name'		=> GEODE_NAME,
+		'version'	=> GEODE_VERSION
 	);
 	
 	public function display_field($data)

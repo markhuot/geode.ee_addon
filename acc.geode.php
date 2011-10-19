@@ -1,11 +1,13 @@
 <?php
 
+require_once PATH_THIRD.'geode/config'.EXT;
+
 class Geode_acc {
 
-	var $name		= 'Geode';
-	var $id			= 'geode';
-	var $version		= '1.0.0';
-	var $description	= 'Gecoding';
+	var $name			= GEODE_NAME;
+	var $id				= GEODE_SHORT_NAME;
+	var $version		= GEODE_VERSION;
+	var $description	= GEODE_DESCRIPTION;
 	var $sections		= array();
 
 	function __construct()

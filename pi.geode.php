@@ -1,11 +1,13 @@
 <?php
 
+require_once PATH_THIRD.'geode/config'.EXT;
+
 $plugin_info = array(
-	'pi_name'			=> 'Geode',
-	'pi_version'		=> '1.0.0',
-	'pi_author'			=> 'Mark Huot',
-	'pi_author_url'		=> 'http://docs.markhuot.com',
-	'pi_description'	=> 'Geocoding Plugin, for Engine Summit 3',
+	'pi_name'			=> GEODE_NAME,
+	'pi_version'		=> GEODE_VERSION,
+	'pi_author'			=> GEODE_AUTHOR,
+	'pi_author_url'		=> GEODE_URL,
+	'pi_description'	=> GEODE_DESCRIPTION,
 	'pi_usage'			=> Geode::usage()
 );
 
