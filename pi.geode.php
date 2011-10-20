@@ -21,7 +21,6 @@ class Geode
 		$this->EE =& get_instance();
 		
 		// Load the view
-		$this->EE->load->_ci_view_path = APPPATH.'/third_party/geode/views/';
 		$this->return_data = $this->EE->load->view('tag', array(
 			'id' => uniqid(),
 			'data' => $this->get_data()
