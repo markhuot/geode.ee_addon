@@ -9,4 +9,16 @@ class Geode_upd extends MHBase_upd
 	var $module_name = GEODE_NAME;
 	var $version = GEODE_VERSION;
 	
+	public function install()
+	{
+		$result = parent::install();
+		
+		if ($result)
+		{
+			// Custom install methods
+		}
+		
+		return $result;
+	}
+	
 }
