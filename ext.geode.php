@@ -12,7 +12,7 @@ class Geode_ext extends MHBase
 	public $docs_url = GEODE_URL;
 	public $settings_exist = 'n';
 	public $settings = array();
-	public $required_by = array('module');
+	public $required_by = array('Module');
 
 	public function __construct($settings='')
 	{
