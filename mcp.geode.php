@@ -1,12 +1,9 @@
 <?php
 
-class Geode_mcp {
+require_once PATH_THIRD.'geode/mhbase'.EXT;
 
-	public function __construct()
-	{
-		$this->EE =& get_instance();
-	}
-	
+class Geode_mcp extends MHBase
+{
 	public function index()
 	{
 		$this->EE->cp->set_variable('cp_page_title', $this->EE->lang->line('geode'));

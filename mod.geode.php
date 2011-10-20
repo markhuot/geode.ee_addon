@@ -1,11 +1,13 @@
 <?php
 
-class Geode
+require_once PATH_THIRD.'geode/mhbase'.EXT;
+
+class Geode extends MHBase
 {
 	
 	function __construct( $str = '' )
 	{
-		$this->EE =& get_instance();
+		parent::__construct();
 		
 		// Load the library
 		$this->EE->load->library('geode_data');
