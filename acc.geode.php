@@ -1,19 +1,15 @@
 <?php
 
 require_once PATH_THIRD.'geode/config'.EXT;
+require_once PATH_THIRD.'geode/mhbase'.EXT;
 
-class Geode_acc {
+class Geode_acc extends MHBase {
 
 	var $name			= GEODE_NAME;
 	var $id				= GEODE_SHORT_NAME;
 	var $version		= GEODE_VERSION;
 	var $description	= GEODE_DESCRIPTION;
 	var $sections		= array();
-
-	function __construct()
-	{
-		$this->EE =& get_instance();
-	}
 	
 	function set_sections()
 	{
